@@ -1,0 +1,8 @@
+[lints.clippy]
+pedantic = "deny"
+nursery = "deny"
+unwrap_used = "forbid"
+
+
+[build]
+rustc-wrapper = "/bin/sccache"
