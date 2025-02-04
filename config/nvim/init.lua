@@ -41,6 +41,18 @@ require("lazy").setup({
     "numToStr/Comment.nvim",
   },
 
+  {
+    "Canop/nvim-bacon",
+    config = function()
+      require("bacon").setup {
+        quickfix = {
+          enabled = true, -- Enable Quickfix integration
+          event_trigger = true, -- Trigger QuickFixCmdPost after populating Quickfix list
+        },
+      }
+    end,
+  },
+
   { import = "plugins" },
 }, lazy_config)
 
