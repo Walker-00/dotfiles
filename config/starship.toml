@@ -2,8 +2,8 @@
 
 # General settings
 format = """
-[╭─](bold blue)$os $username$hostname$directory$git_branch$git_status$nodejs$rust$python$time
-[╰─>](bold blue) """
+[╭───](bold blue)\\[$username$hostname\\] $directory$git_branch$git_status$nodejs$rust$python$time
+[╰─>](bold blue) \\[$os\\]"""
 
 right_format = """$memory_usage"""
 
@@ -23,7 +23,7 @@ show_always = true
 [hostname]
 ssh_only = false
 style = "bold yellow"
-format = "[@$hostname]($style) "
+format = "[@$hostname]($style)"
 
 # Current Directory
 [directory]
@@ -41,7 +41,7 @@ format = "[$symbol$branch]($style) "
 # Git status
 [git_status]
 style = "bold red"
-format = "([$all_status$ahead_behind]($style))"
+format = "([$all_status$ahead_behind]($style)) "
 
 # Node.js (shown only if in a JS project)
 [nodejs]
