@@ -1,0 +1,99 @@
+# ~/.config/starship.toml
+
+# General settings
+format = """
+[╭─](bold blue)$os $username$hostname$directory$git_branch$git_status$nodejs$rust$python$time
+[╰─>](bold blue) """
+
+right_format = """$memory_usage"""
+
+[os]
+disabled = false # Ensure OS module is enabled
+format = "󰣇"
+
+# Username (hidden unless root)
+[username]
+style_user = "bold cyan"
+style_root = "bold red"
+format = "[$user]($style)"
+disabled = false
+show_always = true
+
+# Hostname (only on SSH)
+[hostname]
+ssh_only = false
+style = "bold yellow"
+format = "[@$hostname]($style) "
+
+# Current Directory
+[directory]
+truncation_length = 3
+truncation_symbol = "…/"
+style = "bold purple"
+read_only = " 🔒"
+
+# Git branch
+[git_branch]
+symbol = " "
+style = "bold red"
+format = "[$symbol$branch]($style) "
+
+# Git status
+[git_status]
+style = "bold red"
+format = "([$all_status$ahead_behind]($style))"
+
+# Node.js (shown only if in a JS project)
+[nodejs]
+symbol = " "
+style = "bold green"
+format = "[$symbol$version]($style) "
+
+# Rust (shown only if in a Rust project)
+[rust]
+symbol = "🦀 "
+style = "bold red"
+format = "[$symbol$version]($style) "
+
+# Python (shown only if in a Python project)
+[python]
+symbol = "🐍 "
+style = "bold yellow"
+format = "[$symbol$version]($style) "
+
+# Execution time (shown if over 500ms)
+[cmd_duration]
+min_time = 500
+format = "[⏳ $duration](bold cyan) "
+
+# Battery
+[battery]
+disabled = false
+full_symbol = "🔋"
+charging_symbol = "⚡"
+discharging_symbol = "🔻"
+format = "[$symbol$percentage]($style) "
+
+[[battery.display]]
+threshold = 80
+style = 'bold green'
+
+[[battery.display]]
+threshold = 30
+style = 'bold red'
+discharging_symbol = "🔻"
+
+# Memory Usage
+[memory_usage]
+disabled = false
+threshold = 50
+format = "[$symbol $ram_pct%]($style) "
+symbol = "🧠"
+style = "bold blue"
+
+# Time (24-hour format)
+[time]
+disabled = false
+time_format = "%H:%M"
+style = "bold white"
+format = "[$time]($style) "
