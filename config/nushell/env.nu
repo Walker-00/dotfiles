@@ -21,7 +21,8 @@ $env.CARAPACE_BRIDGES = 'zsh,fish,bash,inshellisense' # optional
 mkdir ~/.cache/carapace
 carapace _carapace nushell | save --force ~/.cache/carapace/init.nu
 
-$env.PATH = ($env.PATH | append "~/.cargo/bin")
+$env.PATH = ($env.PATH | append "/home/walker/.cargo/bin")
+$env.PATH = ($env.PATH | append "/home/walker/.surrealdb")
 $env.PATH = ($env.PATH | append "/opt/android-sdk/tools/bin")
 $env.PATH = ($env.PATH | append "/opt/android-sdk/platform-tools")
 $env.PATH = ($env.PATH | append "/opt/android-sdk/tools")
