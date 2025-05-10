@@ -31,3 +31,5 @@ source ~/.zoxide.nu
 source ~/.cache/carapace/init.nu
 
 alias cd = z
+alias sudo = sudo-rs
+alias su = su-rs
