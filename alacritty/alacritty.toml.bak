@@ -1,0 +1,65 @@
+[window]
+opacity = 0.8
+
+[colors.primary]
+background = "#08080b"
+foreground = "#787c99"
+
+[colors.cursor]
+cursor = "#787c99"
+
+[colors.selection]
+text = "CellForeground"
+background = "#515c7e"
+
+[colors.normal]
+black = "#363b54"
+red = "#f7768e"
+green = "#41a6b5"
+yellow = "#e0af68"
+blue = "#7aa2f7"
+magenta = "#bb9af7"
+cyan = "#7dcfff"
+white = "#787c99"
+
+[colors.bright]
+black = "#363b54"
+red = "#f7768e"
+green = "#41a6b5"
+yellow = "#e0af68"
+blue = "#7aa2f7"
+magenta = "#bb9af7"
+cyan = "#7dcfff"
+white = "#787c99"
+
+[font]
+size = 12.0
+normal = { family = "CaskaydiaCove Nerd Font Mono", style = "Regular" }
+
+# [colors.primary]
+# background = '#1c2023'
+# foreground = '#c7ccd1'
+
+# [colors.cursor]
+# text = '#1c2023'
+# cursor = '#c7ccd1'
+
+# [colors.normal]
+# black   = '#1c2023'
+# red     = '#c7ae95'
+# green   = '#95c7ae'
+# yellow  = '#aec795'
+# blue    = '#ae95c7'
+# magenta = '#c795ae'
+# cyan    = '#95aec7'
+# white   = '#c7ccd1'
+
+# [colors.bright]
+# black   = '#747c84'
+# red     = '#c7ae95'
+# green   = '#95c7ae'
+# yellow  = '#aec795'
+# blue    = '#ae95c7'
+# magenta = '#c795ae'
+# cyan    = '#95aec7'
+# white   = '#f3f4f5'

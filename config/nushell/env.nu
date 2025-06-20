@@ -17,9 +17,9 @@
 # You can remove these comments if you want or leave
 # them for future reference.
 
-$env.CARAPACE_BRIDGES = 'zsh,fish,bash,inshellisense' # optional
+# $env.CARAPACE_BRIDGES = 'zsh,fish,bash,inshellisense' # optional
 mkdir ~/.cache/carapace
-carapace _carapace nushell | save --force ~/.cache/carapace/init.nu
+# carapace _carapace nushell | save --force ~/.cache/carapace/init.nu
 
 $env.PATH = ($env.PATH | append "/home/walker/.cargo/bin")
 $env.PATH = ($env.PATH | append "/home/walker/.surrealdb")
