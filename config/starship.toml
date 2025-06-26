@@ -87,7 +87,7 @@ discharging_symbol = "🔻"
 [memory_usage]
 disabled = false
 threshold = 50
-format = "[$symbol $ram_pct%]($style) "
+format = "[$symbol $ram_pct]($style) "
 symbol = "🧠"
 style = "bold blue"
 
